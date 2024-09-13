@@ -5,7 +5,9 @@
 // import Mortgage from "./Mortgage";
 // import InObjects from "./ObjectHook";
 // import Array from "./ArrayaHooks";
-import Effect from "./effect";
+//
+import RefComp from "./context/RefComp";
+import RefComp2 from "./context/RefComp2";
 
 function App() {
   const sum = 2 + 3;
@@ -21,8 +23,16 @@ function App() {
   ];
   return (
     <>
-      {/* hello world,{sum} */}
-      {/* <br />
+      <div
+        style={{
+          backgroundColor: "green",
+          height: "100vh",
+          width: "100vw",
+          margin: 0,
+        }}
+      >
+        {/* hello world,{sum} */}
+        {/* <br />
       <Car name="tesla" hii={hi} />
       <br />
       <Goal />
@@ -30,17 +40,20 @@ function App() {
         <List users={userlist} />
       </div>
       <Statehook /> */}
-      {/* <div>
+        {/* <div>
         <Mortgage />
       </div> */}
-      {/* <div>
+        {/* <div>
         <InObjects />
       </div> */}
-      {/* <div>
+        {/* <div>
         <Array />
       </div> */}
-      <div>
+        {/* <div>
         <Effect />
+      </div> */}
+        <RefComp />
+        <RefComp2 />
       </div>
     </>
   );
