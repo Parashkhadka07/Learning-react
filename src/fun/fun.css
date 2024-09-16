@@ -1,0 +1,23 @@
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; /* Change this to your preferred text color */
+  font-size: 24px; /* Adjust the font size as needed */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Optional: Add a background color with transparency */
+  padding: 10px; /* Optional: Add padding for better readability */
+}
+.main-content {
+  padding-top: 100px; /* Adjust as needed */
+}
